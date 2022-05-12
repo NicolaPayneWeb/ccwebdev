@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Koulen&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+}
+
+hr {
+    border-color: #000;
+    border-style: dashed;
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    line-height: 1.3rem;
+}
+
+/* Header */
+.header {
+    padding: 150px;
+    text-align: center;
+    background-image: url(images/yoga1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mobileonly {
+    display: none;
+}
+
+.textbg {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #FFF;
+    font-weight: 300;
+}
+
+.textbg h1 {
+    font-size: 3rem;
+}
+
+.textbg p {
+    font-size: 1.8rem;
+}
+
+.textbg a.btn {
+    background-color: #e73291;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+.textbg a.btn:hover {
+    background-color: #edea20;
+    color: #000;
+}
+
+/* navigation bar */
+.navbar {
+    display: flex;
+    background-color: #edea20;
+    justify-content: space-around;
+}
+
+.navbar a {
+    color: #000;
+    padding: 15px;
+    margin: 90px 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.navbar a:hover {
+    color: #e73291;
+}
+
+.navbar img {
+    max-height: 200px;
+}
+
+.navbar a.btn {
+    background-color: #000000;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+.navbar a.btn:hover {
+    background-color: #e73291;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* left column */
+.side {
+    flex: 30%;
+    background-color: #edea20;
+    padding: 20px 30px;
+}
+
+.side h2 {
+    margin-bottom: 0;
+}
+
+p.bordered {
+    background-color: #000;
+    padding: 10px;
+    margin-top: -20px;
+    color: #FFF;
+    font-weight: 300;
+    border: 0;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: #edea20;
+    padding: 20px;
+}
+
+.main i {
+    color: #e73291;
+}
+
+.img1 {
+    background-image: url(images/4.png);
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    padding: 0;
+}
+
+.img2 {
+    background-image: url(images/5.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 50%;
+    padding: 0;
+}
+
+.img3 {
+    background-image: url(images/yoga3.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 260px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+    border: 0;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #e73291;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .logo {
+    flex: 30%;
+}
+
+.footer .findus {
+    flex: 30%;
+}
+
+.footer .findus p {
+    padding-top: 50px;
+}
+
+.footer .contact {
+    flex: 30%;
+}
+
+.footer .contact i {
+    font-size: 2rem;
+    padding: 80px 5px 0 5px;
+    color: #000;
+    cursor: pointer;
+}
+
+.footer .contact i:hover {
+    color: #edea20;
+}
+
+.footer .logo img {
+    max-width: 200px;
+}
+
+.footer p {
+    line-height: 1.3rem;
+}
+
+/* Responsive layout - 700px break point */
+@media screen and (max-width: 700px) {
+
+    .row,
+    .navbar {
+        flex-direction: column;
+        background-color: #000;
+    }
+
+    .navbar a {
+        color: #FFF;
+        padding: 14px 20px;
+        margin: 0;
+    }
+
+    .screenonly {
+        display: none;
+    }
+
+    .mobileonly {
+        max-height: 250px;
+        max-width: 200px;
+        display: flex;
+        align-self: center;
+    }
+
+    /* improve appearance of header text and image2 on mobile */
+    .header {
+        padding: 15px;
+    }
+
+    .textbg p {
+        line-height: 1.9rem;
+    }
+
+    .img2 {
+        width: 100%;
+    }
+
+    .side,
+    .main {
+        padding: 10px;
+    }
+
+    /* footer layout changes for mobile */
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer .findus p {
+        padding-top: 10px;
+    }
+
+    .footer .contact i {
+        padding: 20px 5px 0 5px;
+    }
+}
