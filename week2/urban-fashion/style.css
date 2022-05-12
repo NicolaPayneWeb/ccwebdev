@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Rajdhani', sans-serif; 
+}
+.container{
+    height:100vh;
+    width:100%;
+    background: #ff4b2f;
+    box-sizing: border-box;
+    position:relative;
+} 
+.navbar{
+    width:100%;
+    height:15vh;
+    margin:auto;
+    display:flex;
+    align-items: center;
+    background-color: #333;
+}
+.logo{
+    width:200px;
+    margin-left: 40px;
+    cursor:pointer;
+}
+.cart{
+    width:40px;
+    cursor:pointer;
+    margin-right: 40px;
+}
+nav{
+    flex:1;
+    padding:60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    margin:20px;
+    font-weight: 600;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.content h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:3rem;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    color:#253740
+}
+.content p{
+    font-size:1.4rem;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    color:#253740
+}
+.content{
+    margin-left:15%;
+    margin-top:10%;
+}
+.feature-img{
+    height:75%;
+    position:absolute;
+    bottom:0;
+    right: 100px;
+}
+.content .btn{
+    display:inline-block;
+    background:linear-gradient(45deg,#253740,#013ca3);
+    padding:15px 35px;
+   box-sizing: border-box;
+   text-decoration: none;
+   color:#fff;
+   box-shadow:3px 4px 3px #08b9cd
+}
+.content .btn:hover{
+    background:linear-gradient(45deg,#2059d4,#1b70a6);
+}
+.content .btn {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.arrow-icons{
+    position:absolute;
+    bottom:0;
+    right: 40px;
+}
+.arrow-icons img{
+    width: 200px;
+}
+
+.social-icons{
+    width:50px;
+    position:fixed;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+
+}
+.social-icons img{
+    display:block;
+    width:20px;
+    margin:auto 20px;
+    padding:20px;
+    cursor:pointer;
+}
